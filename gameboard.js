@@ -24,10 +24,13 @@ class Gameboard {
 
     //set spaces to ship
     let coords = this.getCoordinates(start, end);
+    console.log(coords)
 
-    coords.forEach((coord) => {
-      this.cells[coord[0]][coord[1]] = ship;
-    });
+
+    for (let i = 0; i<coords.length; i++){
+      console.log(coords[i]);
+      this.cells[coords[i][0]][coords[i][1]] = ship;
+    }
 
     return true;
   }
