@@ -1,10 +1,10 @@
 import { Gameboard } from "./gameboard"
 
 class Player{
-    constructor(isBot = true){
+    constructor(name = "Computer", isBot = true){
+        this.name = name;
         this.isBot = isBot;
-        this.normalBoard = new Gameboard();
-        this.enemyBoard = new Gameboard();
+        this.board = new Gameboard();
     }
 }
 
